@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apicurious</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav>
+    <ul>
+      <li>
+        <% if current_user %>
+          <%= "Signed in as #{current_user.login}" %>
+          <%= link_to "Logout", github_logout_path, method: :delete %>
+        <% else %>
+          <%= link_to "Login", github_login_path %>
+        <% end %>
+      </li>
+    </ul>
+  </nav>
+    <%= yield %>
+  </body>
+</html>
