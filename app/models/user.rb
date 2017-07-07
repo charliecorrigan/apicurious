@@ -19,7 +19,10 @@ class User < ApplicationRecord
 
   def assign_followers(follower_data)
     follower_data.each do |follower|
-      Follower.find_or_create_by(follower_uid: follower[:id], name: follower[:login], user: self)
+      Follower.find_or_create_by(follower_uid: follower[:id],
+                                name: follower[:login],
+                                user: self
+                                )
     end
   end
 end

@@ -14,7 +14,7 @@ feature "Logged in user visits profile" do
       user = User.find_by(uid: "12345678")
       expect(current_path).to eq(user_path(user))
       expect(page).to have_content("Logout")
-      expect(page).to have_content("jimbotron")
+      expect(page).to have_content("charliecorrigan")
       expect(page).to have_css('img', text: "#{user.avatar_url}")
       expect(page).to have_content("Stars #{user.starred_repos.count}")
       expect(page).to have_content("Followers #{user.followers.count}")
@@ -30,11 +30,11 @@ feature "Logged in user visits profile" do
       extra: {
         raw_info: {
           name: "Jimbo",
-          login: "jimbotron",
+          login: "charliecorrigan",
         }
       },
       credentials: {
-        token: "supercrazylongtokenthing1234",
+        token: ENV["github_user_token"],
       }
     })
   end
