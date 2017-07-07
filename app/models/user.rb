@@ -13,6 +13,16 @@ class User < ApplicationRecord
     end
   end
 
+  def load_profile_data
+    populate_basic_profile(GithubService.fetch_basic_profile)
+    populate_followers(GithubService.fetch_followers)
+
+    # basic_data = Faraday.get("https://api.github.com/user?access_token=#{self.token}")
+    # followers_data = Faraday.get("https://api.github.com/users/#{self.login}/followers?access_token=#{self.token}")
+    # assign_followers(JSON.parse(followers_data.body, symbolize_names: true))
+    # basic_info(JSON.parse(basic_data.body, symbolize_names: true))
+  end
+
   def basic_info(profile_data)
     assign_attributes(avatar_url: profile_data[:avatar_url])
   end
