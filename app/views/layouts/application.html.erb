@@ -19,6 +19,9 @@
           <%= link_to "Login", github_login_path %>
         <% end %>
       </li>
+      <% if current_user %>
+      <li> <%= link_to "Your Profile", user_path(current_user) %> </li>
+      <% end %>
     </ul>
   </nav>
     <%= yield %>
