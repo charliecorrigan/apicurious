@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 feature "Logged in user visits profile" do
-  it "they see their user data" do
+  context "they see their user data" do
 
     before(:each) do
       stub_omniauth
@@ -15,10 +15,10 @@ feature "Logged in user visits profile" do
       expect(current_path).to eq(user_path(user))
       expect(page).to have_content("Logout")
       expect(page).to have_content("jimbotron")
-      page.should have_css('img', text: "#{user.avatar_url}")
-      expect(page).to have_content("Stars #{user.stars.count}")
+      expect(page).to have_css('img', text: "#{user.avatar_url}")
+      expect(page).to have_content("Stars #{user.starred_repos.count}")
       expect(page).to have_content("Followers #{user.followers.count}")
-      expect(page).to have_content("Following #{user.following.count}")
+      expect(page).to have_content("Following #{user.followed_users.count}")
     end
   end
 

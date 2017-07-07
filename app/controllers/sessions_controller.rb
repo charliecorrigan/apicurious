@@ -3,7 +3,6 @@ class SessionsController < ApplicationController
     if user = User.from_omniauth(request.env["omniauth.auth"])
       session[:user_id] = user.id
     end
-    binding.pry
     redirect_to root_path
   end
 
