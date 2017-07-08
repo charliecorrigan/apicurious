@@ -22,7 +22,6 @@ feature "Logged in user visits root" do
           expect(page).to have_selector(".recent-activity-login")
           expect(page).to have_selector(".recent-activity-type")
           expect(page).to have_selector(".recent-activity-repo")
-          expect(page).to have_selector(".recent-activity-created-at")
         end
       end
     end
