@@ -5,22 +5,12 @@
         1,
         null
       ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/models/followed_user.rb": [
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/models/starred_repo.rb": [
         1,
         1,
         null
       ],
       "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/models/follower.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/models/starred_repo.rb": [
         1,
         1,
         null
@@ -33,35 +23,26 @@
         1,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        2,
-        null,
-        null,
-        null,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
         null,
         1,
+        0,
+        null,
+        null,
         1,
         0,
         0,
@@ -69,72 +50,15 @@
         null,
         null,
         null,
-        null
-      ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/welcome_controller.rb": [
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        7,
-        null,
-        null
-      ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/sessions_controller.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
         null,
         null,
         1,
         0,
         0,
         null,
-        null
-      ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/users_controller.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/services/github_service.rb": [
-        1,
-        1,
-        1,
-        1,
         null,
         null,
-        1,
-        1,
-        1,
         null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
         null
       ],
       "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/channels/application_cable/channel.rb": [
@@ -149,6 +73,46 @@
         0,
         0
       ],
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/application_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/sessions_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/users_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/welcome_controller.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
       "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/jobs/application_job.rb": [
         0,
         0
@@ -158,8 +122,44 @@
         0,
         0,
         0
+      ],
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/models/followed_user.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/models/follower.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/services/github_service.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ]
     },
-    "timestamp": 1499479124
+    "timestamp": 1499480033
   }
 }
