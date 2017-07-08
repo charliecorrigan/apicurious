@@ -19,6 +19,11 @@ class GithubService
     JSON.parse(followed_users_data.body, symbolize_names: true)
   end
 
+  def fetch_starred_repos
+    starred_repos_data = Faraday.get("https://api.github.com/users/#{login}/starred?access_token=#{token}")
+    JSON.parse(starred_repos_data.body, symbolize_names: true)
+  end
+
   private
     attr_reader :token, :login
 end
