@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/charliecorrigan/followers?access_token=<GITHUB_TOKEN
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sat, 08 Jul 2017 13:54:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4998'
+      X-Ratelimit-Reset:
+      - '1499525113'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      Etag:
+      - W/"47838bc3c733692abd342f0720dd34d1"
+      X-Oauth-Scopes:
+      - repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.018597'
+      X-Served-By:
+      - 626ed3a9050b8faa02ef5f3c540b508d
+      X-Github-Request-Id:
+      - DC3D:11DB2:D63D3D:149D07A:5960E40F
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"login":"nickedwards109","id":13083224,"avatar_url":"https://avatars0.githubusercontent.com/u/13083224?v=3","gravatar_id":"","url":"https://api.github.com/users/nickedwards109","html_url":"https://github.com/nickedwards109","followers_url":"https://api.github.com/users/nickedwards109/followers","following_url":"https://api.github.com/users/nickedwards109/following{/other_user}","gists_url":"https://api.github.com/users/nickedwards109/gists{/gist_id}","starred_url":"https://api.github.com/users/nickedwards109/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/nickedwards109/subscriptions","organizations_url":"https://api.github.com/users/nickedwards109/orgs","repos_url":"https://api.github.com/users/nickedwards109/repos","events_url":"https://api.github.com/users/nickedwards109/events{/privacy}","received_events_url":"https://api.github.com/users/nickedwards109/received_events","type":"User","site_admin":false},{"login":"MasonHolland","id":19963253,"avatar_url":"https://avatars0.githubusercontent.com/u/19963253?v=3","gravatar_id":"","url":"https://api.github.com/users/MasonHolland","html_url":"https://github.com/MasonHolland","followers_url":"https://api.github.com/users/MasonHolland/followers","following_url":"https://api.github.com/users/MasonHolland/following{/other_user}","gists_url":"https://api.github.com/users/MasonHolland/gists{/gist_id}","starred_url":"https://api.github.com/users/MasonHolland/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/MasonHolland/subscriptions","organizations_url":"https://api.github.com/users/MasonHolland/orgs","repos_url":"https://api.github.com/users/MasonHolland/repos","events_url":"https://api.github.com/users/MasonHolland/events{/privacy}","received_events_url":"https://api.github.com/users/MasonHolland/received_events","type":"User","site_admin":false}]'
+    http_version: 
+  recorded_at: Sat, 08 Jul 2017 13:54:24 GMT
+recorded_with: VCR 3.0.3
