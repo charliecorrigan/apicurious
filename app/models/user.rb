@@ -17,11 +17,6 @@ class User < ApplicationRecord
     github_service = GithubService.new({token: self.token, login: self.login})
     populate_basic_profile(github_service.fetch_basic_profile)
     populate_followers(github_service.fetch_followers)
-
-    # basic_data = Faraday.get("https://api.github.com/user?access_token=#{self.token}")
-    # followers_data = Faraday.get("https://api.github.com/users/#{self.login}/followers?access_token=#{self.token}")
-    # assign_followers(JSON.parse(followers_data.body, symbolize_names: true))
-    # basic_info(JSON.parse(basic_data.body, symbolize_names: true))
   end
 
   def populate_basic_profile(profile_data)

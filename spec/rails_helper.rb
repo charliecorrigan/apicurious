@@ -12,6 +12,13 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.filter_sensitive_data('<GITHUB_TOKEN') { ENV["github_user_token"] }
 end
+
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
+end
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
