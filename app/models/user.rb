@@ -18,6 +18,7 @@ class User < ApplicationRecord
     populate_basic_profile(github_service.fetch_basic_profile)
     populate_followers(github_service.fetch_followers)
     populate_followed_users(github_service.fetch_followed_users)
+    populate_starred_repos(github_service.fetch_starred_repos)
   end
 
   def populate_basic_profile(profile_data)
@@ -36,6 +37,14 @@ class User < ApplicationRecord
   def populate_followed_users(followed_user_data)
     followed_user_data.each do |followed_user|
       FollowedUser.find_or_create_by(name: followed_user[:login],
+                                    user: self
+                                    )
+    end
+  end
+
+  def populate_starred_repos(starred_repo_data)
+    starred_repo_data.each do |starred_repo|
+      StarredRepo.find_or_create_by(full_name: starred_repo[:full_name],
                                     user: self
                                     )
     end
