@@ -4,6 +4,7 @@ class User < ApplicationRecord
   has_many :followers
   has_many :followed_users
   has_many :recent_events
+  has_many :followed_recent_events
 
   def self.from_omniauth(response_data)
     where(uid: response_data[:uid]).first_or_create do |user|
@@ -63,5 +64,9 @@ class User < ApplicationRecord
                         created_at: event[:created_at],
                         user: self)
     end
+  end
+
+  def load_root_data
+    populate_followed_recent_activity(github_service.fetch_followed_recent_activity)
   end
 end

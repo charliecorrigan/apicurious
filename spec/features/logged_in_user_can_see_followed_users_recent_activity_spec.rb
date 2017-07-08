@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 feature "Logged in user visits root" do
   context "they see their followed user's recent activity" do
 
