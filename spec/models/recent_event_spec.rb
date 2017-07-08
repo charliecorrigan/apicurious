@@ -13,13 +13,12 @@ RSpec.describe RecentEvent, type: :model do
 
     raw_recent_event = {
       user_id: user.id,
-      event_type: "PullRequest"
-      repo: "charlie/awesome_app"
+      event_type: "PullRequest",
+      repo: "charlie/awesome_app",
       created_at: DateTime.now
     }
 
     recent_event = RecentEvent.create(raw_recent_event)
-
 
     expect(recent_event.event_type).to eq("PullRequest")
     expect(recent_event.user.uid).to eq("1234567")
