@@ -34,6 +34,10 @@ class User < ApplicationRecord
   end
 
   def populate_followed_users(followed_user_data)
-
+    followed_user_data.each do |followed_user|
+      FollowedUser.find_or_create_by(name: followed_user[:login],
+                                    user: self
+                                    )
+    end
   end
 end
