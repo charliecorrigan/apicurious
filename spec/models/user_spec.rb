@@ -1,6 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+
+  it { should have_many :followers }
+  it { should have_many :followed_users }
+  it { should have_many :starred_repos }
+
   it "is a valid user" do
     raw_user = {
       uid: "1234567",
