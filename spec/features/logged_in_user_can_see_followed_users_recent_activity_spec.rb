@@ -9,7 +9,6 @@ feature "Logged in user visits root" do
       VCR.use_cassette("github_service.root_activity_feed") do
         visit root_path
         click_on "Login"
-        user = User.find_by(uid: "12345678")
 
         expect(current_path).to eq(root_path)
         expect(page).to have_content("Logout")
