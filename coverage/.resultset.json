@@ -15,6 +15,16 @@
         1,
         null
       ],
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/models/follower.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/models/starred_repo.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/models/user.rb": [
         1,
         null,
@@ -23,32 +33,102 @@
         1,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
+        3,
+        3,
+        3,
+        3,
+        3,
         null,
         null,
         null,
         1,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
-        0,
-        0,
+        1,
+        2,
         null,
         null,
         null,
         null,
         null,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/welcome_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        25,
+        null,
+        null
+      ],
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/sessions_controller.rb": [
+        1,
+        1,
+        3,
+        3,
+        null,
+        3,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/users_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/services/github_service.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
         null
       ],
       "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/channels/application_cable/channel.rb": [
@@ -63,46 +143,6 @@
         0,
         0
       ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/application_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/sessions_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/users_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/controllers/welcome_controller.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
       "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/jobs/application_job.rb": [
         0,
         0
@@ -112,39 +152,8 @@
         0,
         0,
         0
-      ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/models/follower.rb": [
-        0,
-        0,
-        0
-      ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/models/starred_repo.rb": [
-        0,
-        0,
-        0
-      ],
-      "/Users/ccorrigan/turing/3module/projects/apicurious/apicurious/app/services/github_service.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1499478047
+    "timestamp": 1499478234
   }
 }

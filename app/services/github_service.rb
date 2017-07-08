@@ -14,6 +14,11 @@ class GithubService
     JSON.parse(followers_data.body, symbolize_names: true)
   end
 
+  def fetch_followed_users
+    followed_users_data = Faraday.get("https://api.github.com/users/#{login}/following?access_token=#{token}")
+    JSON.parse(followed_users_data.body, symbolize_names: true)
+  end
+
   private
     attr_reader :token, :login
 end

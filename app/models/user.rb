@@ -17,6 +17,7 @@ class User < ApplicationRecord
     github_service = GithubService.new({token: self.token, login: self.login})
     populate_basic_profile(github_service.fetch_basic_profile)
     populate_followers(github_service.fetch_followers)
+    populate_followed_users(github_service.fetch_followed_users)
   end
 
   def populate_basic_profile(profile_data)
@@ -30,5 +31,9 @@ class User < ApplicationRecord
                                 user: self
                                 )
     end
+  end
+
+  def populate_followed_users(followed_user_data)
+
   end
 end
