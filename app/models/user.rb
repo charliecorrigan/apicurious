@@ -70,4 +70,14 @@ class User < ApplicationRecord
     github_service = GithubService.new({token: self.token, login: self.login})
     populate_followed_recent_activity(github_service.fetch_followed_recent_activity)
   end
+
+  def populate_followed_recent_activity(followed_activity_data)
+    FollowedRecentEvent.where(user_id: self.id).destroy_all
+    followed_activity_data.each do |event|
+      FollowedRecentEvent.create(event_type: event[:type],
+                        login: event[:actor][:display_login],
+                        repo: event[:repo][:name],
+                        user: self)
+    end
+  end
 end

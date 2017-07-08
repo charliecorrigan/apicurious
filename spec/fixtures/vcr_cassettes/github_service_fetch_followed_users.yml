@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Sat, 08 Jul 2017 20:30:19 GMT
+      - Sat, 08 Jul 2017 20:37:57 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,14 +31,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4981'
+      - '4958'
       X-Ratelimit-Reset:
       - '1499547842'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Vary:
       - Accept, Authorization, Cookie, X-GitHub-OTP
-      - Accept-Encoding
       Etag:
       - W/"e983b7ec6d60c46e75c17bf42c2f62e9"
       X-Oauth-Scopes:
@@ -63,14 +62,12 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Runtime-Rack:
-      - '0.024955'
-      X-Served-By:
-      - 593010132f82159af0ded24b4932e109
+      - '0.033218'
       X-Github-Request-Id:
-      - E1E7:11DAA:9F2860:F3E211:596140DA
+      - E219:11DAC:4D4473:76F305:596142A5
     body:
       encoding: ASCII-8BIT
       string: '[{"login":"nickedwards109","id":13083224,"avatar_url":"https://avatars0.githubusercontent.com/u/13083224?v=3","gravatar_id":"","url":"https://api.github.com/users/nickedwards109","html_url":"https://github.com/nickedwards109","followers_url":"https://api.github.com/users/nickedwards109/followers","following_url":"https://api.github.com/users/nickedwards109/following{/other_user}","gists_url":"https://api.github.com/users/nickedwards109/gists{/gist_id}","starred_url":"https://api.github.com/users/nickedwards109/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/nickedwards109/subscriptions","organizations_url":"https://api.github.com/users/nickedwards109/orgs","repos_url":"https://api.github.com/users/nickedwards109/repos","events_url":"https://api.github.com/users/nickedwards109/events{/privacy}","received_events_url":"https://api.github.com/users/nickedwards109/received_events","type":"User","site_admin":false},{"login":"MasonHolland","id":19963253,"avatar_url":"https://avatars0.githubusercontent.com/u/19963253?v=3","gravatar_id":"","url":"https://api.github.com/users/MasonHolland","html_url":"https://github.com/MasonHolland","followers_url":"https://api.github.com/users/MasonHolland/followers","following_url":"https://api.github.com/users/MasonHolland/following{/other_user}","gists_url":"https://api.github.com/users/MasonHolland/gists{/gist_id}","starred_url":"https://api.github.com/users/MasonHolland/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/MasonHolland/subscriptions","organizations_url":"https://api.github.com/users/MasonHolland/orgs","repos_url":"https://api.github.com/users/MasonHolland/repos","events_url":"https://api.github.com/users/MasonHolland/events{/privacy}","received_events_url":"https://api.github.com/users/MasonHolland/received_events","type":"User","site_admin":false},{"login":"nmcolome","id":24360249,"avatar_url":"https://avatars1.githubusercontent.com/u/24360249?v=3","gravatar_id":"","url":"https://api.github.com/users/nmcolome","html_url":"https://github.com/nmcolome","followers_url":"https://api.github.com/users/nmcolome/followers","following_url":"https://api.github.com/users/nmcolome/following{/other_user}","gists_url":"https://api.github.com/users/nmcolome/gists{/gist_id}","starred_url":"https://api.github.com/users/nmcolome/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/nmcolome/subscriptions","organizations_url":"https://api.github.com/users/nmcolome/orgs","repos_url":"https://api.github.com/users/nmcolome/repos","events_url":"https://api.github.com/users/nmcolome/events{/privacy}","received_events_url":"https://api.github.com/users/nmcolome/received_events","type":"User","site_admin":false}]'
     http_version: 
-  recorded_at: Sat, 08 Jul 2017 20:30:19 GMT
+  recorded_at: Sat, 08 Jul 2017 20:37:57 GMT
 recorded_with: VCR 3.0.3

@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Sat, 08 Jul 2017 20:30:19 GMT
+      - Sat, 08 Jul 2017 20:37:57 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,7 +31,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4980'
+      - '4957'
       X-Ratelimit-Reset:
       - '1499547842'
       Cache-Control:
@@ -63,15 +63,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Runtime-Rack:
-      - '0.030726'
+      - '0.033982'
       X-Served-By:
-      - 7f48e2f7761567e923121f17538d7a6d
+      - 6694d697f15dfc31f0ffaf8cdb1d5a86
       X-Github-Request-Id:
-      - E1E8:11DB6:E54588:1B01048:596140DB
+      - E21A:11DB6:E66594:1B22D39:596142A5
     body:
       encoding: ASCII-8BIT
       string: '[{"id":92856777,"name":"little-shop","full_name":"Benjaminpjacobs/little-shop","owner":{"login":"Benjaminpjacobs","id":24966769,"avatar_url":"https://avatars3.githubusercontent.com/u/24966769?v=3","gravatar_id":"","url":"https://api.github.com/users/Benjaminpjacobs","html_url":"https://github.com/Benjaminpjacobs","followers_url":"https://api.github.com/users/Benjaminpjacobs/followers","following_url":"https://api.github.com/users/Benjaminpjacobs/following{/other_user}","gists_url":"https://api.github.com/users/Benjaminpjacobs/gists{/gist_id}","starred_url":"https://api.github.com/users/Benjaminpjacobs/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Benjaminpjacobs/subscriptions","organizations_url":"https://api.github.com/users/Benjaminpjacobs/orgs","repos_url":"https://api.github.com/users/Benjaminpjacobs/repos","events_url":"https://api.github.com/users/Benjaminpjacobs/events{/privacy}","received_events_url":"https://api.github.com/users/Benjaminpjacobs/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/Benjaminpjacobs/little-shop","description":"Virtual
         Accessories for Virtually Everyone!","fork":false,"url":"https://api.github.com/repos/Benjaminpjacobs/little-shop","forks_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/forks","keys_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/keys{/key_id}","collaborators_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/teams","hooks_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/hooks","issue_events_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/issues/events{/number}","events_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/events","assignees_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/assignees{/user}","branches_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/branches{/branch}","tags_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/tags","blobs_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/git/refs{/sha}","trees_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/git/trees{/sha}","statuses_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/statuses/{sha}","languages_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/languages","stargazers_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/stargazers","contributors_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/contributors","subscribers_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/subscribers","subscription_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/subscription","commits_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/commits{/sha}","git_commits_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/git/commits{/sha}","comments_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/comments{/number}","issue_comment_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/issues/comments{/number}","contents_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/contents/{+path}","compare_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/compare/{base}...{head}","merges_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/merges","archive_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/downloads","issues_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/issues{/number}","pulls_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/pulls{/number}","milestones_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/milestones{/number}","notifications_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/labels{/name}","releases_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/releases{/id}","deployments_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/deployments","created_at":"2017-05-30T17:05:35Z","updated_at":"2017-07-07T01:49:43Z","pushed_at":"2017-06-30T15:39:55Z","git_url":"git://github.com/Benjaminpjacobs/little-shop.git","ssh_url":"git@github.com:Benjaminpjacobs/little-shop.git","clone_url":"https://github.com/Benjaminpjacobs/little-shop.git","svn_url":"https://github.com/Benjaminpjacobs/little-shop","homepage":"http://ready-player-one.herokuapp.com","size":29030,"stargazers_count":1,"watchers_count":1,"language":"JavaScript","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":2,"mirror_url":null,"open_issues_count":2,"forks":2,"open_issues":2,"watchers":1,"default_branch":"master","permissions":{"admin":false,"push":true,"pull":true}}]'
     http_version: 
-  recorded_at: Sat, 08 Jul 2017 20:30:19 GMT
+  recorded_at: Sat, 08 Jul 2017 20:37:58 GMT
 recorded_with: VCR 3.0.3
