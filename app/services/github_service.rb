@@ -29,6 +29,11 @@ class GithubService
     JSON.parse(recent_events_data.body, symbolize_names: true)
   end
 
+  def fetch_followed_recent_activity
+    recent_events_data = Faraday.get("https://api.github.com/users/#{login}/received_events?page=1&per_page=10&access_token=#{token}")
+    JSON.parse(recent_events_data.body, symbolize_names: true)
+  end
+
   private
     attr_reader :token, :login
 end

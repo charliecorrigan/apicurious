@@ -4,6 +4,7 @@ class User < ApplicationRecord
   has_many :followers
   has_many :followed_users
   has_many :recent_events
+  has_many :followed_recent_events
 
   def self.from_omniauth(response_data)
     where(uid: response_data[:uid]).first_or_create do |user|
@@ -61,6 +62,21 @@ class User < ApplicationRecord
       RecentEvent.create(event_type: event[:type],
                         repo: event[:repo][:name],
                         created_at: event[:created_at],
+                        user: self)
+    end
+  end
+
+  def load_root_data
+    github_service = GithubService.new({token: self.token, login: self.login})
+    populate_followed_recent_activity(github_service.fetch_followed_recent_activity)
+  end
+
+  def populate_followed_recent_activity(followed_activity_data)
+    FollowedRecentEvent.where(user_id: self.id).destroy_all
+    followed_activity_data.each do |event|
+      FollowedRecentEvent.create(event_type: event[:type],
+                        login: event[:actor][:display_login],
+                        repo: event[:repo][:name],
                         user: self)
     end
   end

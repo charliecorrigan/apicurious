@@ -8,21 +8,25 @@ RSpec.describe "User logs in using github" do
     end
 
     it "they click login link" do
-      visit root_path
-      click_on "Login"
-      expect(page.status_code).to be(200)
-      expect(page).to have_content("Logout")
-      expect(page).to have_content("jimbotron")
+      VCR.use_cassette("github_service.basic_login") do
+        visit root_path
+        click_on "Login"
+        expect(page.status_code).to be(200)
+        expect(page).to have_content("Logout")
+        expect(page).to have_content("jimbotron")
+      end
     end
 
     it "they click logout link" do
-      visit root_path
-      click_on "Login"
-      click_on "Logout"
-      expect(page.status_code).to be(200)
-      expect(page).not_to have_content("Logout")
-      expect(page).to have_content("Login")
-      expect(page).not_to have_content("jimbotron")
+      VCR.use_cassette("github_service.basic_logout") do
+        visit root_path
+        click_on "Login"
+        click_on "Logout"
+        expect(page.status_code).to be(200)
+        expect(page).not_to have_content("Logout")
+        expect(page).to have_content("Login")
+        expect(page).not_to have_content("jimbotron")
+      end
     end
   end
 
@@ -38,7 +42,7 @@ RSpec.describe "User logs in using github" do
         }
       },
       credentials: {
-        token: "supercrazylongtokenthing1234",
+        token: ENV["github_user_token"],
       }
     })
   end
