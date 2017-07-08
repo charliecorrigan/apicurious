@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Sat, 08 Jul 2017 16:24:52 GMT
+      - Sat, 08 Jul 2017 20:30:18 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,16 +31,16 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4989'
+      - '4983'
       X-Ratelimit-Reset:
-      - '1499534669'
+      - '1499547842'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Vary:
       - Accept, Authorization, Cookie, X-GitHub-OTP
       - Accept-Encoding
       Etag:
-      - W/"8e822db39547659439bece0d14eab4ad"
+      - W/"4c3b737685c1debbbf41b268097da3fa"
       Last-Modified:
       - Fri, 07 Jul 2017 14:12:02 GMT
       X-Oauth-Scopes:
@@ -65,18 +65,18 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Runtime-Rack:
-      - '0.036388'
+      - '0.032378'
       X-Served-By:
-      - 46808ddc41c302090177e58148908b23
+      - 075bb2f6b7031ca3c0e69edb17939fae
       X-Github-Request-Id:
-      - DFA8:11DB6:C3F7DF:16FA18F:59610754
+      - E1E5:11DB2:11883A0:1B155AC:596140DA
     body:
       encoding: ASCII-8BIT
       string: '{"login":"charliecorrigan","id":20289631,"avatar_url":"https://avatars2.githubusercontent.com/u/20289631?v=3","gravatar_id":"","url":"https://api.github.com/users/charliecorrigan","html_url":"https://github.com/charliecorrigan","followers_url":"https://api.github.com/users/charliecorrigan/followers","following_url":"https://api.github.com/users/charliecorrigan/following{/other_user}","gists_url":"https://api.github.com/users/charliecorrigan/gists{/gist_id}","starred_url":"https://api.github.com/users/charliecorrigan/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/charliecorrigan/subscriptions","organizations_url":"https://api.github.com/users/charliecorrigan/orgs","repos_url":"https://api.github.com/users/charliecorrigan/repos","events_url":"https://api.github.com/users/charliecorrigan/events{/privacy}","received_events_url":"https://api.github.com/users/charliecorrigan/received_events","type":"User","site_admin":false,"name":"Charlie
         PS Corrigan","company":null,"blog":"www.charliepscorrigan.com","location":"Denver,
         Colorado","email":"charlie.ps.corrigan@gmail.com","hireable":true,"bio":"Back-end
         engineering student at Turing School\r\nFind me on...\r\nTwitter: @cpscorrigan\r\nLinkedIn:
-        linkedin.com/in/charliepscorrigan/\r\n","public_repos":40,"public_gists":3,"followers":2,"following":3,"created_at":"2016-07-04T23:10:17Z","updated_at":"2017-07-07T14:12:02Z","private_gists":21,"total_private_repos":0,"owned_private_repos":0,"disk_usage":7721,"collaborators":0,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":0}}'
+        linkedin.com/in/charliepscorrigan/\r\n","public_repos":40,"public_gists":3,"followers":2,"following":3,"created_at":"2016-07-04T23:10:17Z","updated_at":"2017-07-07T14:12:02Z","private_gists":21,"total_private_repos":0,"owned_private_repos":0,"disk_usage":7735,"collaborators":0,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":0}}'
     http_version: 
-  recorded_at: Sat, 08 Jul 2017 16:24:52 GMT
+  recorded_at: Sat, 08 Jul 2017 20:30:18 GMT
 recorded_with: VCR 3.0.3
