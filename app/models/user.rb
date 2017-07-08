@@ -13,11 +13,22 @@ class User < ApplicationRecord
     end
   end
 
-  def basic_info(profile_data)
+  def load_profile_data
+    github_service = GithubService.new({token: self.token, login: self.login})
+    populate_basic_profile(github_service.fetch_basic_profile)
+    populate_followers(github_service.fetch_followers)
+
+    # basic_data = Faraday.get("https://api.github.com/user?access_token=#{self.token}")
+    # followers_data = Faraday.get("https://api.github.com/users/#{self.login}/followers?access_token=#{self.token}")
+    # assign_followers(JSON.parse(followers_data.body, symbolize_names: true))
+    # basic_info(JSON.parse(basic_data.body, symbolize_names: true))
+  end
+
+  def populate_basic_profile(profile_data)
     assign_attributes(avatar_url: profile_data[:avatar_url])
   end
 
-  def assign_followers(follower_data)
+  def populate_followers(follower_data)
     follower_data.each do |follower|
       Follower.find_or_create_by(follower_uid: follower[:id],
                                 name: follower[:login],
