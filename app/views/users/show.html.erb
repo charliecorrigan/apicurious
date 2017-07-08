@@ -10,3 +10,13 @@
     <li>Following <%= @user.followed_users.count %></li>
   </ul>
 </nav>
+
+<div class="activity-feed">
+  <% @user.recent_events.each do |event|  %>
+    <div class="recent-activity">
+       <p class="recent-activity-type"><%= event.event_type %></p>
+       <p class="recent-activity-repo"><%= event.repo %></p>
+       <p class="recent-activity-created-at"><%= event.created_at %></p>
+    </div>
+  <% end %>
+</div>

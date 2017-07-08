@@ -76,6 +76,26 @@ describe GithubService do
     end
   end
 
+  context "#fetch_recent_activity" do
+    it "returns an array of hashes" do
+      VCR.use_cassette("github_service.fetch_recent_activity") do
+        github_service = GithubService.new({token: ENV["github_user_token"], login: "charliecorrigan"})
+        recent_events = github_service.fetch_recent_activity
+        recent_event = recent_events.first
+
+        expect(recent_events).to be_an Array
+        expect(recent_event).to be_a Hash
+        expect(recent_events.count).to eq(10)
+        expect(recent_event).to have_key(:type)
+        expect(recent_event[:type]).to be_a String
+        expect(recent_event).to have_key(:repo)
+        expect(recent_event[:repo]).to be_a Hash
+        expect(recent_event).to have_key(:payload)
+        expect(recent_event[:payload]).to be_a Hash
+      end
+    end
+  end
+
   def stub_omniauth
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({
