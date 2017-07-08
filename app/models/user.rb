@@ -67,6 +67,7 @@ class User < ApplicationRecord
   end
 
   def load_root_data
+    github_service = GithubService.new({token: self.token, login: self.login})
     populate_followed_recent_activity(github_service.fetch_followed_recent_activity)
   end
 end
