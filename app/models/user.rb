@@ -41,4 +41,12 @@ class User < ApplicationRecord
                                     )
     end
   end
+
+  def populate_starred_repos(starred_repo_data)
+    starred_repo_data.each do |starred_repo|
+      StarredRepo.find_or_create_by(full_name: starred_repo[:full_name],
+                                    user: self
+                                    )
+    end
+  end
 end

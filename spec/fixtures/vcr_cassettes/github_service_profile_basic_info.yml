@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Sat, 08 Jul 2017 01:55:28 GMT
+      - Sat, 08 Jul 2017 02:18:14 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,15 +31,16 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4998'
+      - '4970'
       X-Ratelimit-Reset:
       - '1499481955'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Vary:
       - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
       Etag:
-      - W/"599e4568480aa3a3e4b5a1753e1793e3"
+      - W/"9579fc18eb7856fa74bb5f64f75ed283"
       Last-Modified:
       - Fri, 07 Jul 2017 14:12:02 GMT
       X-Oauth-Scopes:
@@ -64,18 +65,20 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Runtime-Rack:
-      - '0.056275'
+      - '0.035040'
+      X-Served-By:
+      - 52189b7290fad804d77890ef34a1eeae
       X-Github-Request-Id:
-      - D206:11DB6:4E522A:8B9E47:59603B90
+      - D2D1:11DB6:5147C9:917FE0:596040E5
     body:
       encoding: ASCII-8BIT
       string: '{"login":"charliecorrigan","id":20289631,"avatar_url":"https://avatars2.githubusercontent.com/u/20289631?v=3","gravatar_id":"","url":"https://api.github.com/users/charliecorrigan","html_url":"https://github.com/charliecorrigan","followers_url":"https://api.github.com/users/charliecorrigan/followers","following_url":"https://api.github.com/users/charliecorrigan/following{/other_user}","gists_url":"https://api.github.com/users/charliecorrigan/gists{/gist_id}","starred_url":"https://api.github.com/users/charliecorrigan/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/charliecorrigan/subscriptions","organizations_url":"https://api.github.com/users/charliecorrigan/orgs","repos_url":"https://api.github.com/users/charliecorrigan/repos","events_url":"https://api.github.com/users/charliecorrigan/events{/privacy}","received_events_url":"https://api.github.com/users/charliecorrigan/received_events","type":"User","site_admin":false,"name":"Charlie
         PS Corrigan","company":null,"blog":"www.charliepscorrigan.com","location":"Denver,
         Colorado","email":"charlie.ps.corrigan@gmail.com","hireable":true,"bio":"Back-end
         engineering student at Turing School\r\nFind me on...\r\nTwitter: @cpscorrigan\r\nLinkedIn:
-        linkedin.com/in/charliepscorrigan/\r\n","public_repos":40,"public_gists":3,"followers":2,"following":3,"created_at":"2016-07-04T23:10:17Z","updated_at":"2017-07-07T14:12:02Z","private_gists":21,"total_private_repos":0,"owned_private_repos":0,"disk_usage":7584,"collaborators":0,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":0}}'
+        linkedin.com/in/charliepscorrigan/\r\n","public_repos":40,"public_gists":3,"followers":2,"following":3,"created_at":"2016-07-04T23:10:17Z","updated_at":"2017-07-07T14:12:02Z","private_gists":21,"total_private_repos":0,"owned_private_repos":0,"disk_usage":7692,"collaborators":0,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":0}}'
     http_version: 
-  recorded_at: Sat, 08 Jul 2017 01:55:27 GMT
+  recorded_at: Sat, 08 Jul 2017 02:18:13 GMT
 - request:
     method: get
     uri: https://api.github.com/users/charliecorrigan/followers?access_token=<GITHUB_TOKEN
@@ -97,7 +100,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Sat, 08 Jul 2017 01:55:28 GMT
+      - Sat, 08 Jul 2017 02:18:14 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -107,14 +110,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4997'
+      - '4969'
       X-Ratelimit-Reset:
       - '1499481955'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Vary:
       - Accept, Authorization, Cookie, X-GitHub-OTP
-      - Accept-Encoding
       Etag:
       - W/"47838bc3c733692abd342f0720dd34d1"
       X-Oauth-Scopes:
@@ -139,16 +141,14 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Runtime-Rack:
-      - '0.021963'
-      X-Served-By:
-      - 5aeb3f30c9e3ef6ef7bcbcddfd9a68f7
+      - '0.032900'
       X-Github-Request-Id:
-      - D207:11DB6:4E525E:8B9EB1:59603B90
+      - D2D2:11DAA:36CFC0:53A769:596040E6
     body:
       encoding: ASCII-8BIT
       string: '[{"login":"nickedwards109","id":13083224,"avatar_url":"https://avatars0.githubusercontent.com/u/13083224?v=3","gravatar_id":"","url":"https://api.github.com/users/nickedwards109","html_url":"https://github.com/nickedwards109","followers_url":"https://api.github.com/users/nickedwards109/followers","following_url":"https://api.github.com/users/nickedwards109/following{/other_user}","gists_url":"https://api.github.com/users/nickedwards109/gists{/gist_id}","starred_url":"https://api.github.com/users/nickedwards109/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/nickedwards109/subscriptions","organizations_url":"https://api.github.com/users/nickedwards109/orgs","repos_url":"https://api.github.com/users/nickedwards109/repos","events_url":"https://api.github.com/users/nickedwards109/events{/privacy}","received_events_url":"https://api.github.com/users/nickedwards109/received_events","type":"User","site_admin":false},{"login":"MasonHolland","id":19963253,"avatar_url":"https://avatars0.githubusercontent.com/u/19963253?v=3","gravatar_id":"","url":"https://api.github.com/users/MasonHolland","html_url":"https://github.com/MasonHolland","followers_url":"https://api.github.com/users/MasonHolland/followers","following_url":"https://api.github.com/users/MasonHolland/following{/other_user}","gists_url":"https://api.github.com/users/MasonHolland/gists{/gist_id}","starred_url":"https://api.github.com/users/MasonHolland/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/MasonHolland/subscriptions","organizations_url":"https://api.github.com/users/MasonHolland/orgs","repos_url":"https://api.github.com/users/MasonHolland/repos","events_url":"https://api.github.com/users/MasonHolland/events{/privacy}","received_events_url":"https://api.github.com/users/MasonHolland/received_events","type":"User","site_admin":false}]'
     http_version: 
-  recorded_at: Sat, 08 Jul 2017 01:55:27 GMT
+  recorded_at: Sat, 08 Jul 2017 02:18:13 GMT
 - request:
     method: get
     uri: https://api.github.com/users/charliecorrigan/following?access_token=<GITHUB_TOKEN
@@ -170,7 +170,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Sat, 08 Jul 2017 01:55:29 GMT
+      - Sat, 08 Jul 2017 02:18:14 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -180,14 +180,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4996'
+      - '4968'
       X-Ratelimit-Reset:
       - '1499481955'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Vary:
       - Accept, Authorization, Cookie, X-GitHub-OTP
-      - Accept-Encoding
       Etag:
       - W/"e983b7ec6d60c46e75c17bf42c2f62e9"
       X-Oauth-Scopes:
@@ -212,14 +211,83 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Runtime-Rack:
-      - '0.043148'
-      X-Served-By:
-      - 10ea50bffaded85949561216def301f3
+      - '0.028881'
       X-Github-Request-Id:
-      - D208:11DAA:34B053:505638:59603B90
+      - D2D3:11DAC:1BA9A5:2AEDD8:596040E6
     body:
       encoding: ASCII-8BIT
       string: '[{"login":"nickedwards109","id":13083224,"avatar_url":"https://avatars0.githubusercontent.com/u/13083224?v=3","gravatar_id":"","url":"https://api.github.com/users/nickedwards109","html_url":"https://github.com/nickedwards109","followers_url":"https://api.github.com/users/nickedwards109/followers","following_url":"https://api.github.com/users/nickedwards109/following{/other_user}","gists_url":"https://api.github.com/users/nickedwards109/gists{/gist_id}","starred_url":"https://api.github.com/users/nickedwards109/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/nickedwards109/subscriptions","organizations_url":"https://api.github.com/users/nickedwards109/orgs","repos_url":"https://api.github.com/users/nickedwards109/repos","events_url":"https://api.github.com/users/nickedwards109/events{/privacy}","received_events_url":"https://api.github.com/users/nickedwards109/received_events","type":"User","site_admin":false},{"login":"MasonHolland","id":19963253,"avatar_url":"https://avatars0.githubusercontent.com/u/19963253?v=3","gravatar_id":"","url":"https://api.github.com/users/MasonHolland","html_url":"https://github.com/MasonHolland","followers_url":"https://api.github.com/users/MasonHolland/followers","following_url":"https://api.github.com/users/MasonHolland/following{/other_user}","gists_url":"https://api.github.com/users/MasonHolland/gists{/gist_id}","starred_url":"https://api.github.com/users/MasonHolland/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/MasonHolland/subscriptions","organizations_url":"https://api.github.com/users/MasonHolland/orgs","repos_url":"https://api.github.com/users/MasonHolland/repos","events_url":"https://api.github.com/users/MasonHolland/events{/privacy}","received_events_url":"https://api.github.com/users/MasonHolland/received_events","type":"User","site_admin":false},{"login":"nmcolome","id":24360249,"avatar_url":"https://avatars1.githubusercontent.com/u/24360249?v=3","gravatar_id":"","url":"https://api.github.com/users/nmcolome","html_url":"https://github.com/nmcolome","followers_url":"https://api.github.com/users/nmcolome/followers","following_url":"https://api.github.com/users/nmcolome/following{/other_user}","gists_url":"https://api.github.com/users/nmcolome/gists{/gist_id}","starred_url":"https://api.github.com/users/nmcolome/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/nmcolome/subscriptions","organizations_url":"https://api.github.com/users/nmcolome/orgs","repos_url":"https://api.github.com/users/nmcolome/repos","events_url":"https://api.github.com/users/nmcolome/events{/privacy}","received_events_url":"https://api.github.com/users/nmcolome/received_events","type":"User","site_admin":false}]'
     http_version: 
-  recorded_at: Sat, 08 Jul 2017 01:55:28 GMT
+  recorded_at: Sat, 08 Jul 2017 02:18:13 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/charliecorrigan/starred?access_token=<GITHUB_TOKEN
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sat, 08 Jul 2017 02:18:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4967'
+      X-Ratelimit-Reset:
+      - '1499481955'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"fceaea0f1714a4dbf9b25801b8dcba5c"
+      X-Oauth-Scopes:
+      - repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.042860'
+      X-Github-Request-Id:
+      - D2D4:11DAA:36D00C:53A7D3:596040E6
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":92856777,"name":"little-shop","full_name":"Benjaminpjacobs/little-shop","owner":{"login":"Benjaminpjacobs","id":24966769,"avatar_url":"https://avatars3.githubusercontent.com/u/24966769?v=3","gravatar_id":"","url":"https://api.github.com/users/Benjaminpjacobs","html_url":"https://github.com/Benjaminpjacobs","followers_url":"https://api.github.com/users/Benjaminpjacobs/followers","following_url":"https://api.github.com/users/Benjaminpjacobs/following{/other_user}","gists_url":"https://api.github.com/users/Benjaminpjacobs/gists{/gist_id}","starred_url":"https://api.github.com/users/Benjaminpjacobs/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Benjaminpjacobs/subscriptions","organizations_url":"https://api.github.com/users/Benjaminpjacobs/orgs","repos_url":"https://api.github.com/users/Benjaminpjacobs/repos","events_url":"https://api.github.com/users/Benjaminpjacobs/events{/privacy}","received_events_url":"https://api.github.com/users/Benjaminpjacobs/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/Benjaminpjacobs/little-shop","description":"Virtual
+        Accessories for Virtually Everyone!","fork":false,"url":"https://api.github.com/repos/Benjaminpjacobs/little-shop","forks_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/forks","keys_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/keys{/key_id}","collaborators_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/teams","hooks_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/hooks","issue_events_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/issues/events{/number}","events_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/events","assignees_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/assignees{/user}","branches_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/branches{/branch}","tags_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/tags","blobs_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/git/refs{/sha}","trees_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/git/trees{/sha}","statuses_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/statuses/{sha}","languages_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/languages","stargazers_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/stargazers","contributors_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/contributors","subscribers_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/subscribers","subscription_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/subscription","commits_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/commits{/sha}","git_commits_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/git/commits{/sha}","comments_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/comments{/number}","issue_comment_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/issues/comments{/number}","contents_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/contents/{+path}","compare_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/compare/{base}...{head}","merges_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/merges","archive_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/downloads","issues_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/issues{/number}","pulls_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/pulls{/number}","milestones_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/milestones{/number}","notifications_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/labels{/name}","releases_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/releases{/id}","deployments_url":"https://api.github.com/repos/Benjaminpjacobs/little-shop/deployments","created_at":"2017-05-30T17:05:35Z","updated_at":"2017-07-07T01:49:43Z","pushed_at":"2017-06-30T15:39:55Z","git_url":"git://github.com/Benjaminpjacobs/little-shop.git","ssh_url":"git@github.com:Benjaminpjacobs/little-shop.git","clone_url":"https://github.com/Benjaminpjacobs/little-shop.git","svn_url":"https://github.com/Benjaminpjacobs/little-shop","homepage":"http://ready-player-one.herokuapp.com","size":29030,"stargazers_count":1,"watchers_count":1,"language":"JavaScript","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":2,"mirror_url":null,"open_issues_count":2,"forks":2,"open_issues":2,"watchers":1,"default_branch":"master","permissions":{"admin":false,"push":true,"pull":true}}]'
+    http_version: 
+  recorded_at: Sat, 08 Jul 2017 02:18:14 GMT
 recorded_with: VCR 3.0.3
