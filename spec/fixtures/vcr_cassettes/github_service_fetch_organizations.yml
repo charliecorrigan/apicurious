@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/charliecorrigan/orgs?access_token=<GITHUB_TOKEN
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sun, 09 Jul 2017 14:07:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4973'
+      X-Ratelimit-Reset:
+      - '1499610015'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"5b88bf32b0b46e5faa634cf55f9eb0e3"
+      X-Oauth-Scopes:
+      - repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.021054'
+      X-Github-Request-Id:
+      - E682:7251:18A97DB:26CFDAE:596238A7
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"login":"turing1703be","id":30009063,"url":"https://api.github.com/orgs/turing1703be","repos_url":"https://api.github.com/orgs/turing1703be/repos","events_url":"https://api.github.com/orgs/turing1703be/events","hooks_url":"https://api.github.com/orgs/turing1703be/hooks","issues_url":"https://api.github.com/orgs/turing1703be/issues","members_url":"https://api.github.com/orgs/turing1703be/members{/member}","public_members_url":"https://api.github.com/orgs/turing1703be/public_members{/member}","avatar_url":"https://avatars1.githubusercontent.com/u/30009063?v=3","description":"A
+        fake organization to test the orgs endpoint on the github api"}]'
+    http_version: 
+  recorded_at: Sun, 09 Jul 2017 14:07:35 GMT
+recorded_with: VCR 3.0.3
