@@ -34,6 +34,11 @@ class GithubService
     JSON.parse(recent_events_data.body, symbolize_names: true)
   end
 
+  def fetch_organizations
+    organizations_data = Faraday.get("https://api.github.com/users/#{login}/orgs?access_token=#{token}")
+    JSON.parse(organizations_data.body, symbolize_names: true)
+  end
+
   private
     attr_reader :token, :login
 end
