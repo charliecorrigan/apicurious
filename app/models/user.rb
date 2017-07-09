@@ -5,6 +5,7 @@ class User < ApplicationRecord
   has_many :followed_users
   has_many :recent_events
   has_many :followed_recent_events
+  has_many :organizations
 
   def self.from_omniauth(response_data)
     where(uid: response_data[:uid]).first_or_create do |user|
@@ -31,7 +32,7 @@ class User < ApplicationRecord
   def populate_followers(follower_data)
     Follower.where(user_id: self.id).destroy_all
     follower_data.each do |follower|
-      Follower.find_or_create_by(follower_uid: follower[:id],
+      Follower.create(follower_uid: follower[:id],
                                 name: follower[:login],
                                 user: self
                                 )
@@ -41,7 +42,7 @@ class User < ApplicationRecord
   def populate_followed_users(followed_user_data)
     FollowedUser.where(user_id: self.id).destroy_all
     followed_user_data.each do |followed_user|
-      FollowedUser.find_or_create_by(name: followed_user[:login],
+      FollowedUser.create(name: followed_user[:login],
                                     user: self
                                     )
     end
@@ -50,7 +51,7 @@ class User < ApplicationRecord
   def populate_starred_repos(starred_repo_data)
     StarredRepo.where(user_id: self.id).destroy_all
     starred_repo_data.each do |starred_repo|
-      StarredRepo.find_or_create_by(full_name: starred_repo[:full_name],
+      StarredRepo.create(full_name: starred_repo[:full_name],
                                     user: self
                                     )
     end
