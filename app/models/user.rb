@@ -82,4 +82,12 @@ class User < ApplicationRecord
                         user: self)
     end
   end
+
+  def populate_organizations(organization_data)
+    Organization.where(user_id: self.id).destroy_all
+    organization_data.each do |org|
+      Organization.create(login: org[:login],
+                        user: self)
+    end
+  end
 end
