@@ -18,7 +18,7 @@
               <ul class="dropdown-menu">
                 <li><%= "Signed in as #{current_user.login}" %></li>
                 <li> <%= link_to "Your Profile", user_path(current_user) %> </li>
-                <li> <%= link_to "Sign Out", github_logout_path %> </li>
+                <li> <%= link_to "Sign Out", github_logout_path, method: :delete %> </li>
               </ul>
             </li>
           <% else %>
