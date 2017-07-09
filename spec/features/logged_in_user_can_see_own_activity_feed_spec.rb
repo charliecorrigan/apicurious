@@ -15,7 +15,7 @@ feature "Logged in user visits profile" do
         user = User.find_by(uid: "12345678")
 
         expect(current_path).to eq(user_path(user))
-        expect(page).to have_content("Logout")
+        expect(page).to have_content("Sign Out")
         expect(page).to have_content("charliecorrigan")
 
         expect(page).to have_selector(".recent-activity", count: 10)
