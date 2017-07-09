@@ -9,21 +9,29 @@
   </head>
 
   <body>
-  <nav>
-    <ul>
-      <li>
+  <div class='col-md-12 navbar navbar-default navbar-static-top'>
+      <a href='/' class='navbar-brand'>APICurious</a>
+      <ul class='nav navbar-nav navbar-right'>
+        <li>
+          <% if current_user %>
+            <%= "Signed in as #{current_user.login}" %>
+          <% end %>
+        </li>
+        <li>
+          <% if current_user %>
+            <%= link_to "Logout", github_logout_path, method: :delete %>
+          <% else %>
+            <%= link_to "Login", github_login_path %>
+          <% end %>
+        </li>
         <% if current_user %>
-          <%= "Signed in as #{current_user.login}" %>
-          <%= link_to "Logout", github_logout_path, method: :delete %>
-        <% else %>
-          <%= link_to "Login", github_login_path %>
+        <li> <%= link_to "Your Profile", user_path(current_user) %> </li>
         <% end %>
-      </li>
-      <% if current_user %>
-      <li> <%= link_to "Your Profile", user_path(current_user) %> </li>
-      <% end %>
-    </ul>
-  </nav>
+      </ul>
+    </div>
+
+  <div class="container-fluid">
     <%= yield %>
+  </div>
   </body>
 </html>
