@@ -23,6 +23,7 @@ class User < ApplicationRecord
     populate_followed_users(github_service.fetch_followed_users)
     populate_starred_repos(github_service.fetch_starred_repos)
     populate_recent_activity(github_service.fetch_recent_activity)
+    populate_organizations(github_service.fetch_organizations)
   end
 
   def populate_basic_profile(profile_data)

@@ -19,6 +19,7 @@ feature "Logged in user visits profile" do
         expect(page).to have_content("charliecorrigan")
 
         expect(page).to have_selector(".organizations")
+        expect(page).to have_content(user.organizations.first.login)
       end
     end
   end
