@@ -5,6 +5,7 @@ class User < ApplicationRecord
   has_many :followed_users
   has_many :recent_events
   has_many :followed_recent_events
+  has_many :organizations
 
   def self.from_omniauth(response_data)
     where(uid: response_data[:uid]).first_or_create do |user|
@@ -22,6 +23,7 @@ class User < ApplicationRecord
     populate_followed_users(github_service.fetch_followed_users)
     populate_starred_repos(github_service.fetch_starred_repos)
     populate_recent_activity(github_service.fetch_recent_activity)
+    populate_organizations(github_service.fetch_organizations)
   end
 
   def populate_basic_profile(profile_data)
@@ -31,7 +33,7 @@ class User < ApplicationRecord
   def populate_followers(follower_data)
     Follower.where(user_id: self.id).destroy_all
     follower_data.each do |follower|
-      Follower.find_or_create_by(follower_uid: follower[:id],
+      Follower.create(follower_uid: follower[:id],
                                 name: follower[:login],
                                 user: self
                                 )
@@ -41,7 +43,7 @@ class User < ApplicationRecord
   def populate_followed_users(followed_user_data)
     FollowedUser.where(user_id: self.id).destroy_all
     followed_user_data.each do |followed_user|
-      FollowedUser.find_or_create_by(name: followed_user[:login],
+      FollowedUser.create(name: followed_user[:login],
                                     user: self
                                     )
     end
@@ -50,7 +52,7 @@ class User < ApplicationRecord
   def populate_starred_repos(starred_repo_data)
     StarredRepo.where(user_id: self.id).destroy_all
     starred_repo_data.each do |starred_repo|
-      StarredRepo.find_or_create_by(full_name: starred_repo[:full_name],
+      StarredRepo.create(full_name: starred_repo[:full_name],
                                     user: self
                                     )
     end
@@ -77,6 +79,14 @@ class User < ApplicationRecord
       FollowedRecentEvent.create(event_type: event[:type],
                         login: event[:actor][:display_login],
                         repo: event[:repo][:name],
+                        user: self)
+    end
+  end
+
+  def populate_organizations(organization_data)
+    Organization.where(user_id: self.id).destroy_all
+    organization_data.each do |org|
+      Organization.create(login: org[:login],
                         user: self)
     end
   end
