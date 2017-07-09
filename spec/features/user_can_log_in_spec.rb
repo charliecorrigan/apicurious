@@ -12,7 +12,7 @@ RSpec.describe "User logs in using github" do
         visit root_path
         click_on "Login"
         expect(page.status_code).to be(200)
-        expect(page).to have_content("Logout")
+        expect(page).to have_content("Sign Out")
         expect(page).to have_content("jimbotron")
       end
     end
@@ -21,9 +21,9 @@ RSpec.describe "User logs in using github" do
       VCR.use_cassette("github_service.basic_logout") do
         visit root_path
         click_on "Login"
-        click_on "Logout"
+        click_on "Sign Out"
         expect(page.status_code).to be(200)
-        expect(page).not_to have_content("Logout")
+        expect(page).not_to have_content("Sign Out")
         expect(page).to have_content("Login")
         expect(page).not_to have_content("jimbotron")
       end

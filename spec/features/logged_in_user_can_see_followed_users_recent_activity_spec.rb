@@ -13,7 +13,7 @@ feature "Logged in user visits root" do
         click_on "Login"
 
         expect(current_path).to eq(root_path)
-        expect(page).to have_content("Logout")
+        expect(page).to have_content("Sign Out")
         expect(page).to have_content("charliecorrigan")
 
         expect(page).to have_selector(".recent-activity", count: 10)
