@@ -116,6 +116,22 @@ describe GithubService do
     end
   end
 
+  context "#fetch_organizations" do
+    it "returns an array of hashes" do
+      VCR.use_cassette("github_service.fetch_organizations") do
+        github_service = GithubService.new({token: ENV["github_user_token"], login: "charliecorrigan"})
+        organizations = github_service.fetch_organizations
+        organization = organizations.first
+
+        expect(organizations).to be_an Array
+        expect(organization).to be_a Hash
+        expect(organizations.count).to eq(1)
+        expect(organization).to have_key(:login)
+        expect(organization[:login]).to be_a String
+      end
+    end
+  end
+
   def stub_omniauth
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({
