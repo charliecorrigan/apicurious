@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170708160915) do
+ActiveRecord::Schema.define(version: 20170708201745) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "followed_recent_events", force: :cascade do |t|
+    t.string "event_type"
+    t.string "login"
+    t.string "repo"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_followed_recent_events_on_user_id"
+  end
 
   create_table "followed_users", force: :cascade do |t|
     t.bigint "user_id"
@@ -59,6 +69,7 @@ ActiveRecord::Schema.define(version: 20170708160915) do
     t.string "avatar_url"
   end
 
+  add_foreign_key "followed_recent_events", "users"
   add_foreign_key "followed_users", "users"
   add_foreign_key "followers", "users"
   add_foreign_key "recent_events", "users"
