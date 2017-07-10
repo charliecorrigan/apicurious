@@ -1,16 +1,21 @@
-<img class="img" src="<%= @user.avatar_url %>">
-<nav class="inner-profile-nav">
-  <ul>
-    <li>Stars <%= @user.starred_repos.count %></li>
-  </ul>
-  <ul>
-    <li>Followers <%= @user.followers.count %></li>
-  </ul>
-  <ul>
-    <li>Following <%= @user.followed_users.count %></li>
-  </ul>
-</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+      <img class="img" id="avatar" src="<%= @user.avatar_url %>" />
+    </div>
+    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+      <div class='col-md-12 navbar navbar-static-top'>
+        <ul class='nav navbar-nav navbar-left'>
+          <li>Stars <%= @user.starred_repos.count %></li>
+          <li>Followers <%= @user.followers.count %></li>
+          <li>Following <%= @user.followed_users.count %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
+<h2>Recent Contributions</h2>
 <div class="activity-feed">
   <% @user.recent_events.each do |event|  %>
     <div class="recent-activity">
@@ -21,8 +26,12 @@
   <% end %>
 </div>
 
+<h2>Organizations</h2>
 <ul class="organizations">
   <% @user.organizations.each do |organization| %>
   <li><%= organization.login %></li>
   <% end %>
 </ul>
+
+<h2>Repositories</h2>
+<p id="repos"></p>

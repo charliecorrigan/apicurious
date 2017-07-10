@@ -17,6 +17,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><%= "Signed in as #{current_user.login}" %></li>
+                <li role="separator" class="divider"></li>
                 <li> <%= link_to "Your Profile", user_path(current_user) %> </li>
                 <li> <%= link_to "Sign Out", github_logout_path, method: :delete %> </li>
               </ul>
