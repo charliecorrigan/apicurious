@@ -1,6 +1,3 @@
-var userToken = '2ba73b3b838b5bf80a2108442eca54efeaef4eb9';
-var userLogin = 'charliecorrigan';
-
 fetch(`https://api.github.com/users/${userLogin}/repos?access_token=${userToken}`)
   .then(respondsToJSON)
   .then(selectRepoAttributes)
