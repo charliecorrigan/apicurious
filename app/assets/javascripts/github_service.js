@@ -1,4 +1,7 @@
-fetch('https://api.github.com/users/charliecorrigan/repos?access_token=5ba8a157ec89132f049361ac600651b2460b929e')
+var userToken = '2ba73b3b838b5bf80a2108442eca54efeaef4eb9';
+var userLogin = 'charliecorrigan';
+
+fetch(`https://api.github.com/users/${userLogin}/repos?access_token=${userToken}`)
   .then(respondsToJSON)
   .then(selectRepoAttributes)
 
