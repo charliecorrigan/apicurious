@@ -14,3 +14,12 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#avatar {
+  width: 300px;
+}
+
+.navbar-nav > li{
+  padding-left: 30px;
+  padding-right: 30px;
+}
